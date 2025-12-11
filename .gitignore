@@ -1,0 +1,59 @@
+# Python.gitignore
+
+# ==================== 1. 虚拟环境 ====================
+# 忽略主要的虚拟环境目录名称
+venv/
+.venv/
+
+# Conda 环境
+# 生产环境中通常不需要提交这些环境配置
+# .conda/
+
+# Pipenv / Poetry 锁文件 (通常建议提交，但如果不想提交则取消注释)
+# Pipfile.lock
+# poetry.lock
+
+# ==================== 2. 编译/缓存文件 ====================
+# 编译后的 Python 文件和缓存目录
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==================== 3. 构建/打包文件 ====================
+# 打包和分发时生成的文件和目录
+build/
+dist/
+.eggs/
+*.egg
+*.egg-info/
+develop-eggs/
+
+# ==================== 4. 操作系统/编辑器/IDE 文件 ====================
+# macOS/Linux
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Visual Studio Code
+# 忽略其配置目录（除非你需要共享某些特定设置）
+.vscode/
+
+# PyCharm / IntelliJ IDEA
+.idea/
+
+# Jupyter Notebook 检查点
+.ipynb_checkpoints
+
+# ==================== 5. 日志/临时/敏感文件 ====================
+# 日志文件
+*.log
+
+# 临时文件
+*.tmp
+*.bak
+
+# 配置文件（包含敏感信息如数据库密码/API 密钥）
+# 通常建议使用 .env 文件，并将其忽略
+.env
+.flaskenv
